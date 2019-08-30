@@ -1,3 +1,41 @@
 baseURL = "http://example.org/"
-languageCode = "en-us"
-title = "My New Hugo Site"
+languageCode = "zh-cn"
+title = "个人主页"
+copyright = "Copyright 2019-2028; All rights reserved"
+author = "Steve Francia"
+
+[[menu.main]]
+    name = "标签"
+    pre = "<i class='fa fa-tags'></i>"
+    weight = -80
+    identifier = "tags"
+    url = "/tags/"
+
+[[menu.main]]
+    name = "经历"
+    pre = "<i class='fa fa-institution'></i>"
+    weight = -100
+    identifier = "school"
+    url = "/school/"
+
+[[menu.main]]
+    name = "ABOUT ME"
+    pre = "<i class='fa fa-info-circle'></i>"
+    weight = -90
+    identifier = "about-me"
+    url = "/about"
+
+
+# You can have link at the footer as below
+[[menu.footer]]
+    name = "  联系我"
+    pre = "<i class='fa fa-envelope'></i>"
+    weight = -110
+    identifier = "contact"
+    url = "mailto:wchustc@mail.ustc.edu.cn"
+
+[[menu.footer]]
+    name = "LICENSE"
+    weight = -120
+    identifier = "license"
+    url = "/page/license/"
