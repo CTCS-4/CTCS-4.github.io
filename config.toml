@@ -35,7 +35,7 @@ author = "Steve Francia"
     url = "mailto:wchustc@mail.ustc.edu.cn"
 
 [[menu.footer]]
-    name = "LICENSE"
+    name = "HUGO"
     weight = -120
-    identifier = "license"
-    url = "/page/license/"
+    identifier = "hugo"
+    url = "https://gohugo.io/"
