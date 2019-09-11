@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>个人主页</title>
+    <link>http://home.ustc.edu.cn/~wchustc/</link>
+    <description>Recent content on 个人主页</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <copyright>Copyright 2019-2028; All rights reserved</copyright>
+    <lastBuildDate>Fri, 06 Sep 2019 21:05:36 +0800</lastBuildDate>
+    
+	<atom:link href="http://home.ustc.edu.cn/~wchustc/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>折腾Yogabook</title>
+      <link>http://home.ustc.edu.cn/~wchustc/post/post2/</link>
+      <pubDate>Fri, 06 Sep 2019 21:05:36 +0800</pubDate>
+      
+      <guid>http://home.ustc.edu.cn/~wchustc/post/post2/</guid>
+      <description>折腾YogaBook 这周的主要精力耗费在了YogaBook上面，最后却什么都没搞出来。
+简单地描述一下这一周做的几件事
+ 尝试在YogaBook上安装Arch并且成功 尝试在YogaBook上安装驱动并失败 尝试回滚到Windows并受到驱动的困扰 从几百MB的Intel芯片组驱动里面一个个找出驱动，在设备管理器里安装。  重点讲一下第二点。
+虽然联想开源了Yogabook使用的驱动源代码，但是因为这个内核基于3.14，十分老旧，我在短时间内找不到一个可以用来编译的平台。它自身带的交叉编译工具也不能跑起来（就在这个时候我忽然想到说不定可以用ubuntu 12.10搞一个，然而安全性实在堪忧）
+如果使用最新的内核源码进行编译，那么我就需要更改一部分源码——举个例子，该机器使用的PWM调光驱动，调用了pwm_can_sleep函数，这个函数已经不再被支持。从此可见读源码的工作量是比较大的，我暂时还不想给自己这么大压力。所以在可以预见的将来，我应该会逐步把这件事情慢慢做完。
+接下来讲一下YogaBook。这其实是一个很有趣的设备，而且也非常的有前瞻性。从苹果为MBP安装的TouchBar，到Yogabook C930上的触摸电子墨水屏和ZenBook Duo上的第二屏，键盘的多样化形式其实十分具有创造性。
+然而，这样的创造性背后的，是极其惨烈的兼容性。对于Windows系统而言，官方提供的驱动下载服务根本没有什么用处——I2C总线控制器等重要驱动需要用设备管理器进行人工安装，但是却很难用</description>
+    </item>
+    
+    <item>
+      <title>Markdown Syntax Guide</title>
+      <link>http://home.ustc.edu.cn/~wchustc/post/markdown-syntax/</link>
+      <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://home.ustc.edu.cn/~wchustc/post/markdown-syntax/</guid>
+      <description>&lt;p&gt;This article offers a sample of basic Markdown syntax that can be used in Hugo content files, also it shows whether basic HTML elements are decorated with CSS in a Hugo theme.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
